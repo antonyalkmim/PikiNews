@@ -1,4 +1,4 @@
-# SputinikNews
+# PikiNews
 Portal de Notícias para projeto de Trabalho de Conclusão de Curso na PUC-GO
 
 ---

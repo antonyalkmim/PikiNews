@@ -1,38 +1,58 @@
+/* General Styles */
+
 html, body {
+    height:100%;
     background: #ececec;
 }
-
-a {
-    color: #FF9800;
-}
+a {  color: #FFC107;  }
 
 @font-face {
     font-family: 'ambient';
     src: url('../fonts/AMBIENT.TTF');
 }
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -270px;
+}
 
+/* Header Styles */
 .logo {
     font-family: ambient, serif;
     font-size: 55px;
 }
-
-.menu {
-    margin-bottom: 0px !important;
-}
-
+.menu {  margin-bottom: 0px !important;  }
 .header {
     background: #FFF;
     padding: 50px 0;
     margin-bottom: 20px;
 }
+.social-links a {  margin: 0 10px;  }
+.social-links i {  font-size: 4.0rem !important;  }
 
-.social-links {
-
+/*Footer*/
+.footer-orange {
+    background: #F9A825;
+    /*height: 50px;*/
+    padding: 15px 0;
 }
-
-.social-links a {
-    margin: 0 10px;
+.footer-orange-text {
+    font-family: ambient;
+    font-size: 24px;
 }
-.social-links i {
-    font-size: 4.0rem !important;
+footer, .push {  height: 270px;  }
+footer {  background: #FFC107;  }
+footer a {  color: #333;  }
+footer a:hover {  color: #333;  }
+footer ul {  padding:0 0 0 10px;  }
+footer ul li {
+    list-style: none;
+    padding:0px;
+}
+.footer-col-title {  color: #333;  }
+.footer-container {  padding:20px;  }
+.app-container {
+    background:#FFF;
+    padding: 20px;
 }
