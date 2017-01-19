@@ -92,15 +92,15 @@
             <!--App Container-->
             <div ng-view class="container app-container"></div>
 
-            <div class="push"></div>
+            <div class="push hidden-sm hidden-xs"></div>
         </div>
 
         <!--Footer-->
-        <footer>
+        <footer class="hidden-sm hidden-xs">
             <div class="container footer-container">
                 <div class="row">
 
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-3">
                         <h3 class="footer-col-title">Notícias</h3>
                         <ul>
                             <li><a href="#!/">Comunidades</a></li>
@@ -111,7 +111,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-3">
                         <h3 class="footer-col-title">Esportes</h3>
                         <ul>
                             <li><a href="#!/">Campeonato Brasileiro</a></li>
@@ -125,7 +125,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-3">
                         <h3 class="footer-col-title">Economia</h3>
                         <ul>
                             <li><a href="#!/">Moedas</a></li>
@@ -142,6 +142,11 @@
                 </div>
             </div>
         </footer>
+        <div class="footer-orange visible-sm visible-xs hidden-md hidden-lg">
+            <div class="container footer-orange-text">
+                PikiNews
+            </div>
+        </div>
 
 
         <!-- In production use:
