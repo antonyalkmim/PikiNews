@@ -1,0 +1,38 @@
+html, body {
+    background: #ececec;
+}
+
+a {
+    color: #FF9800;
+}
+
+@font-face {
+    font-family: 'ambient';
+    src: url('../fonts/AMBIENT.TTF');
+}
+
+.logo {
+    font-family: ambient, serif;
+    font-size: 55px;
+}
+
+.menu {
+    margin-bottom: 0px !important;
+}
+
+.header {
+    background: #FFF;
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+
+.social-links {
+
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+.social-links i {
+    font-size: 4.0rem !important;
+}
