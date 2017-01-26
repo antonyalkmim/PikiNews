@@ -56,3 +56,17 @@ footer ul li {
     background:#FFF;
     padding: 20px;
 }
+
+/* Home */
+.main-carousel {
+    width: 600px;
+    height: 370px;
+}
+.carousel-inner ::after {
+    background: url('../images/gradient.svg') !important;
+}
+
+.news-block {  }
+.news-block-title {
+    margin:0px 0 20px 0;
+}
