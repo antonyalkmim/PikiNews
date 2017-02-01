@@ -3,7 +3,7 @@
 angular.module('app.search', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/search', {
+  $routeProvider.when('/s/:term', {
     templateUrl: 'views/search/search.html',
     controller: 'SearchCtrl'
   });
