@@ -4,7 +4,8 @@
 angular.module('app', [
     'ngRoute',
     'app.home',
-    'app.news'
+    'app.news',
+    'app.search'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');

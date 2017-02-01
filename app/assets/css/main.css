@@ -138,3 +138,12 @@ footer ul li {
     margin-bottom: 1em;
     width: 100%;
 }
+
+/*Search Neews Page*/
+.search-news-block-title {
+    margin:0;
+}
+.search-news-subtitle {
+    color: #000;
+    margin-top: 1em;
+}
