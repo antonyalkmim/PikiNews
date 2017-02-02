@@ -2,130 +2,55 @@
 
     <!-- Carousel -->
     <div class="col-lg-7">
-        <div id="carousel-example-generic" class="carousel slide main-carousel" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner main-carousel" role="listbox">
-                <div class="item active item-carousel">
-                    <img class="carousel-img" src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg" alt="...">
-                    <div class="carousel-caption">
-                        <h3>Lorem ipsum dolor sit amet</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    </div>
-                </div>
-                <div class="item item-carousel">
-                    <img class="carousel-img" src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg" alt="...">
-                    <div class="carousel-caption">
-                        <h3>Lorem ipsum dolor sit amet</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    </div>
-                </div>
-                <div class="item item-carousel">
-                    <img class="carousel-img" src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg" alt="...">
-                    <div class="carousel-caption">
-                        <h3>Lorem ipsum dolor sit amet</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    </div>
+        <div uib-carousel active="active" interval="4000" class="main-carousel">
+            <div uib-slide ng-repeat="item in slides" index="$index" class="item-carousel">
+                <img class="carousel-img" ng-src="{{item.imageThumb}}" alt="{{item.title}}">
+                <div class="carousel-caption">
+                    <h3>{{item.title}}</h3>
+                    <p>{{item.subtitle}}</p>
                 </div>
             </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
     </div>
 
     <div class="col-lg-5">
         <div class="row">
-            <div class="col-lg-6">
-                <a href="#!/">
-                    <img class="img-responsive news-block-img" src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg" alt="...">
-                    <h3 class="news-block-title">Lorem ipsum dolor sit amet</h3>
+            <div class="col-lg-6"
+                 ng-repeat="item in breakingNews | limitTo:4">
+                <a href="#!/news/{{item.uid}}">
+                    <img class="img-responsive news-block-img" ng-src="{{item.imageThumb}}" alt="{{item.title}}">
+                    <h3 class="news-block-title">{{item.title}}</h3>
                 </a>
             </div>
-            <div class="col-lg-6">
-                <a href="#!/">
-                    <img class="img-responsive news-block-img" src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg" alt="...">
-                    <h3 class="news-block-title">Lorem ipsum dolor sit amet</h3>
-                </a>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-lg-6">
-                <a href="#!/">
-                    <img class="img-responsive news-block-img" src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg" alt="...">
-                    <h3 class="news-block-title">Lorem ipsum dolor sit amet</h3>
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a href="#!/">
-                    <img class="img-responsive news-block-img" src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg" alt="...">
-                    <h3 class="news-block-title">Lorem ipsum dolor sit amet</h3>
-                </a>
-            </div>
         </div>
     </div>
 
 </div>
+
 <div class="row">
+
     <!--World News-->
     <div class="col-lg-4 worldnews-col">
         <h2 class="page-header">Mundo</h2>
         <!--Header news -->
-        <a href="#!/">
-            <img class="img-responsive news-block-img" src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg" alt="...">
-            <h3 class="news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+        <a href="#!/news/{{worldNews.header.uid}}">
+            <img class="img-responsive news-block-img" ng-src="{{worldNews.header.imageThumb}}" alt="{{worldNews.header.title}}">
+            <h3 class="news-block-title">{{worldNews.header.title}}</h3>
         </a>
         <hr/>
 
         <!--small news-->
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
-        </div>
-        <br/>
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
-        </div>
-        <br/>
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
-        </div>
-        <br/>
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
+        <div ng-repeat="item in worldNews.items | limitTo:4">
+            <div class="row">
+                <a href="#!/news/{{item.uid}}">
+                    <div class="col-lg-5"><img class="img-responsive news-block-img"
+                                               ng-src="{{item.imageThumb}}"
+                                               alt="{{item.title}}"></div>
+                    <h4 class="col-lg-7 news-block-title">{{item.title}}</h4>
+                </a>
+            </div>
+            <br/>
         </div>
     </div>
 
@@ -133,47 +58,23 @@
     <div class="col-lg-4 sports-col">
         <h2 class="page-header">Esporte</h2>
         <!--Header news -->
-        <a href="#!/">
-            <img class="img-responsive news-block-img" src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg" alt="...">
-            <h3 class="news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+        <a href="#!/news/{{sportNews.header.uid}}">
+            <img class="img-responsive news-block-img" ng-src="{{sportNews.header.imageThumb}}" alt="{{sportNews.header.title}}">
+            <h3 class="news-block-title">{{sportNews.header.title}}</h3>
         </a>
         <hr/>
 
         <!--small news-->
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
-        </div>
-        <br/>
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
-        </div>
-        <br/>
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
-        </div>
-        <br/>
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
+        <div ng-repeat="item in sportNews.items | limitTo:4">
+            <div class="row">
+                <a href="#!/news/{{item.uid}}">
+                    <div class="col-lg-5"><img class="img-responsive news-block-img"
+                                               ng-src="{{item.imageThumb}}"
+                                               alt="{{item.title}}"></div>
+                    <h4 class="col-lg-7 news-block-title">{{item.title}}</h4>
+                </a>
+            </div>
+            <br/>
         </div>
     </div>
 
@@ -181,47 +82,23 @@
     <div class="col-lg-4">
         <h2 class="page-header">Entretenimento</h2>
         <!--Header news -->
-        <a href="#!/">
-            <img class="img-responsive news-block-img" src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg" alt="...">
-            <h3 class="news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+        <a href="#!/news/{{mediaNews.header.uid}}">
+            <img class="img-responsive news-block-img" ng-src="{{mediaNews.header.imageThumb}}" alt="{{mediaNews.header.title}}">
+            <h3 class="news-block-title">{{mediaNews.header.title}}</h3>
         </a>
         <hr/>
 
         <!--small news-->
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
-        </div>
-        <br/>
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
-        </div>
-        <br/>
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
-        </div>
-        <br/>
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
+        <div ng-repeat="item in mediaNews.items | limitTo:4">
+            <div class="row">
+                <a href="#!/news/{{item.uid}}">
+                    <div class="col-lg-5"><img class="img-responsive news-block-img"
+                                               ng-src="{{item.imageThumb}}"
+                                               alt="{{item.title}}"></div>
+                    <h4 class="col-lg-7 news-block-title">{{item.title}}</h4>
+                </a>
+            </div>
+            <br/>
         </div>
     </div>
 
@@ -230,28 +107,10 @@
 <!--Tech News-->
 <div class="row tech-col">
     <div class="col-lg-12"><h2 class="page-header">Tecnologia</h2></div>
-    <div class="col-lg-3">
-        <a href="#!/">
-            <img class="img-responsive news-block-img" src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg" alt="...">
-            <h4 class="news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-        </a>
-    </div>
-    <div class="col-lg-3">
-        <a href="#!/">
-            <img class="img-responsive news-block-img" src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg" alt="...">
-            <h4 class="news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-        </a>
-    </div>
-    <div class="col-lg-3">
-        <a href="#!/">
-            <img class="img-responsive news-block-img" src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg" alt="...">
-            <h4 class="news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-        </a>
-    </div>
-    <div class="col-lg-3">
-        <a href="#!/">
-            <img class="img-responsive news-block-img" src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg" alt="...">
-            <h4 class="news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
+    <div class="col-lg-3" ng-repeat="item in techNews | limitTo:4">
+        <a href="#!/news/{{item.uid}}">
+            <img class="img-responsive news-block-img" ng-src="{{item.imageThumb}}" alt="{{item.title}}">
+            <h4 class="news-block-title">{{item.title}}</h4>
         </a>
     </div>
 </div>

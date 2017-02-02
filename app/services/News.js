@@ -21,6 +21,16 @@ $app.factory('News',['Api', function (Api) {
         },
         getRelatedNews: function(uid) {
             return Api.get('/news/related/' + uid);
+        },
+        searchNews : function(term, num_items, offset) {
+            var uri = ['/news/s', term, num_items, offset].join("/");
+            return Api.get(uri);
+        },
+        carouselNews :  function() {
+            return Api.get("/news/carousel");
+        },
+        breakingNews :  function() {
+            return Api.get("/news/breaking");
         }
     }
 }]);

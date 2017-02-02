@@ -10,7 +10,7 @@
             <h4 class="news-subtitle">{{news.subtitle}}</h4>
         </div>
 
-        <img src="{{news.imageThumb}}" width="100%">
+        <img ng-src="{{news.imageThumb}}" width="100%">
         <div class="news-content" markdown-to-html="news.content"></div>
 
         <div class="news-content-bottom-separator"></div>
@@ -22,7 +22,7 @@
             <div class="row">
                 <a href="#!/news/{{item.uid}}">
                     <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                               src="{{item.imageThumb}}"
+                                               ng-src="{{item.imageThumb}}"
                                                alt="{{item.title}} - {{item.subtitle}}"></div>
                     <h4 class="col-lg-7 news-block-title">{{item.title}}</h4>
                 </a>
@@ -31,8 +31,8 @@
         </div>
 
         <div class="merchan">
-            <img class="merchan-img" src="http://xpenology.org/wp-content/themes/qaengine/img/default-thumbnail.jpg">
-            <img class="merchan-img" src="http://xpenology.org/wp-content/themes/qaengine/img/default-thumbnail.jpg">
+            <img class="merchan-img" ng-src="http://xpenology.org/wp-content/themes/qaengine/img/default-thumbnail.jpg">
+            <img class="merchan-img" ng-src="http://xpenology.org/wp-content/themes/qaengine/img/default-thumbnail.jpg">
         </div>
 
     </div>

@@ -10,6 +10,8 @@ a:hover {
     color: #122b40 !important;
 }
 
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
 .navbar a:hover {  color: #fff !important;  }
 
 @font-face {
@@ -72,13 +74,9 @@ footer ul li {
     width: 650px;
     height: 390px;
 }
-.item-carousel > img {
+.carousel-img {
     width: 100% !important;
     height: 100% !important;
-}
-
-.carousel-inner ::after {
-    background: url('../images/gradient.svg') !important;
 }
 
 .news-block-img {
