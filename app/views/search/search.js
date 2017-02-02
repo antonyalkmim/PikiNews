@@ -9,8 +9,22 @@ angular.module('app.search', ['ngRoute'])
   });
 }])
 
-.controller('SearchCtrl', ['$scope', function($scope) {
+.controller('SearchCtrl', ['$scope', '$route', '$routeParams', 'News', function($scope, $route, $routeParams, News) {
 
-    $scope.message = "Sputinik está sendo construído!"
+    $scope.searchNews = [];
+    $scope.breakingNews = [];
+
+    // Search News
+    News.searchNews($routeParams.term, 20, 0)
+        .then(function(result) {
+            $scope.searchNews = result.data;
+        })
+        .catch(function(err){ console.log(err) });
+
+    // Main News
+    News.breakingNews()
+        .then(function(result) { $scope.breakingNews = result.data; })
+        .catch(function(err){ console.log(err) });
+
 
 }]);
