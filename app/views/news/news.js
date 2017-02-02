@@ -3,24 +3,28 @@
 angular.module('app.news', ['ngRoute','ng-showdown'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/news', {
+  $routeProvider.when('/news/:uid', {
     templateUrl: 'views/news/news.html',
     controller: 'NewsCtrl'
   });
 }])
 
-.controller('NewsCtrl', ['$scope', function($scope) {
+.controller('NewsCtrl', ['$scope', '$location', '$route', '$routeParams', 'News', function($scope, $location, $route, $routeParams, News) {
 
-    $scope.message = "Sputinik está sendo construído!";
+    $scope.news = { };
 
-    var content = "![News Image](http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg)\n"
-                + "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
-                + "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
-                + "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
-                + "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.";
-    $scope.news = {
-        content : content
-    };
-
+    if ($routeParams.uid) {
+        News.getNews($routeParams.uid)
+            .then(function(result) {
+                if (!result.success) {
+                    $location.path("/error");
+                    return;
+                }
+                $scope.news = result.data;
+            })
+            .catch(function(err){
+                console.log(err);
+            });
+    }
 
 }]);

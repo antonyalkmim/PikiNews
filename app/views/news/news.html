@@ -1,15 +1,16 @@
 <div class="row">
     <div class="col-lg-8 col-news">
         <div class="row">
-            <div class="col-lg-6"><p class="news-date">01/02/2017 14h59 - Atualizado em 01/02/2017 17h02</p></div>
-            <div class="col-lg-6 news-author"><strong>Autor:</strong> Antony Alkmim</div>
+            <div class="col-lg-6"><p class="news-date">{{news.createdAt | date:'medium'}} - Atualizado em {{news.updatedAt | date:'medium'}}</p></div>
+            <div class="col-lg-6 news-author"><strong>Autor:</strong> {{news.author}}</div>
         </div>
 
         <div class="page-header news-title">
-            <h1 class="">Lorem ipsum dolor sit amet</h1>
-            <h4 class="news-subtitle">Consectetuer adipiscing elit, sed diam nonummy nibh euismod.</h4>
+            <h1 class="">{{news.title}}</h1>
+            <h4 class="news-subtitle">{{news.subtitle}}</h4>
         </div>
 
+        <img src="{{news.imageThumb}}" width="100%">
         <div class="news-content" markdown-to-html="news.content"></div>
 
         <div class="news-content-bottom-separator"></div>
