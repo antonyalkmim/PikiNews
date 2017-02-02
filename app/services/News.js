@@ -14,13 +14,13 @@ $app.factory('News',['Api', function (Api) {
         this.updatedAt  = null;
     };
 
-
-    var getNews = function(uid){
-        return Api.get('/news/' + uid);
-    };
-
     return {
         Model : Model,
-        getNews : getNews
+        getNews : function(uid) {
+            return Api.get('/news/' + uid);
+        },
+        getRelatedNews: function(uid) {
+            return Api.get('/news/related/' + uid);
+        }
     }
 }]);

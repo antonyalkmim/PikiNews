@@ -17,57 +17,18 @@
     </div>
 
     <div class="col-lg-4 news-related">
-        <h3 class="page-header news-related-title">Relacionados</h3>
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
+        <h3 class="page-header news-related-title" ng-if="relatedNews.length > 0">Relacionados</h3>
+        <div ng-repeat="item in relatedNews">
+            <div class="row">
+                <a href="#!/news/{{item.uid}}">
+                    <div class="col-lg-5"><img class="img-responsive news-block-img"
+                                               src="{{item.imageThumb}}"
+                                               alt="{{item.title}} - {{item.subtitle}}"></div>
+                    <h4 class="col-lg-7 news-block-title">{{item.title}}</h4>
+                </a>
+            </div>
+            <hr/>
         </div>
-        <hr/>
-
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
-        </div>
-        <hr/>
-
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
-        </div>
-        <hr/>
-
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
-        </div>
-        <hr/>
-
-        <div class="row">
-            <a href="#!/">
-                <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                           src="http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg"
-                                           alt="..."></div>
-                <h4 class="col-lg-7 news-block-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-            </a>
-        </div>
-        <hr/>
-
 
         <div class="merchan">
             <img class="merchan-img" src="http://xpenology.org/wp-content/themes/qaengine/img/default-thumbnail.jpg">
