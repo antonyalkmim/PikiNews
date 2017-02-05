@@ -2,27 +2,49 @@
 
   <!-- Carousel -->
   <div class="col-lg-7">
-    <div uib-carousel active="active" interval="4000" class="main-carousel">
-      <div uib-slide ng-repeat="item in slides" index="$index" class="item-carousel">
-        <img class="carousel-img" src="{{item.imageThumb}}" alt="{{item.title}}">
-        <div class="carousel-caption">
-          <h3>{{item.title}}</h3>
-          <p>{{item.subtitle}}</p>
-        </div>
+      <div id="carousel-example-generic" class="carousel slide main-carousel" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+              <% for(var i in carouselNews) { %>
+              <li data-target="#carousel-example-generic" data-slide-to="<%= i %>" class="<%= i == 0 ? 'active' : ''%>"></li>
+              <% } %>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner main-carousel" role="listbox">
+              <% for(var i in carouselNews) { %>
+              <div class="item <%= i == 0 ? 'active' : ''%> item-carousel">
+                  <img class="carousel-img" src="<%= carouselNews[i].imageThumb %>" alt="<%= carouselNews[i].title %>">
+                  <div class="carousel-caption">
+                      <h3><%= carouselNews[i].title %></h3>
+                      <p><%= carouselNews[i].subtitle %></p>
+                  </div>
+              </div>
+              <% } %>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
       </div>
-    </div>
   </div>
 
   <div class="col-lg-5">
     <div class="row">
-      <div class="col-lg-6"
-           ng-repeat="item in breakingNews | limitTo:4">
-        <a href="/news/{{item.uid}}">
-          <img class="img-responsive news-block-img" src="{{item.imageThumb}}" alt="{{item.title}}">
-          <h3 class="news-block-title">{{item.title}}</h3>
-        </a>
-      </div>
-
+        <% for(var i in breakingNews) { %>
+            <div class="col-lg-6">
+                <a href="/news/<%= breakingNews[i].uid %>">
+                    <img class="img-responsive news-block-img" src="<%= breakingNews[i].imageThumb %>" alt="<%= breakingNews[i].title %>">
+                    <h3 class="news-block-title"><%= breakingNews[i].title %></h3>
+                </a>
+            </div>
+        <% } %>
     </div>
   </div>
 
@@ -34,72 +56,72 @@
   <div class="col-lg-4 worldnews-col">
     <h2 class="page-header">Mundo</h2>
     <!--Header news -->
-    <a href="/news/{{worldNews.header.uid}}">
-      <img class="img-responsive news-block-img" src="{{worldNews.header.imageThumb}}" alt="{{worldNews.header.title}}">
-      <h3 class="news-block-title">{{worldNews.header.title}}</h3>
+    <a href="/news/<%= worldNews[0].uid %>">
+      <img class="img-responsive news-block-img" src="<%= worldNews[0].imageThumb %>" alt="<%= worldNews[0].title %>">
+      <h3 class="news-block-title"><%= worldNews[0].title %></h3>
     </a>
     <hr/>
 
     <!--small news-->
-    <div ng-repeat="item in worldNews.items | limitTo:4">
-      <div class="row">
-        <a href="/news/{{item.uid}}">
-          <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                     src="{{item.imageThumb}}"
-                                     alt="{{item.title}}"></div>
-          <h4 class="col-lg-7 news-block-title">{{item.title}}</h4>
+    <% for(var i = 1; i < worldNews.length; i++ ) { %>
+    <div class="row">
+        <a href="/news/<%= worldNews[i].uid %>">
+            <div class="col-lg-5"><img class="img-responsive news-block-img"
+                                       src="<%= worldNews[i].imageThumb %>"
+                                       alt="<%= worldNews[i].title %>"></div>
+            <h4 class="col-lg-7 news-block-title"><%= worldNews[i].title %></h4>
         </a>
-      </div>
-      <br/>
     </div>
+    <br/>
+    <% } %>
   </div>
 
   <!--Sports Col-->
   <div class="col-lg-4 sports-col">
     <h2 class="page-header">Esporte</h2>
     <!--Header news -->
-    <a href="/news/{{sportNews.header.uid}}">
-      <img class="img-responsive news-block-img" src="{{sportNews.header.imageThumb}}" alt="{{sportNews.header.title}}">
-      <h3 class="news-block-title">{{sportNews.header.title}}</h3>
-    </a>
+      <a href="/news/<%= sportNews[0].uid %>">
+          <img class="img-responsive news-block-img" src="<%= sportNews[0].imageThumb %>" alt="<%= sportNews[0].title %>">
+          <h3 class="news-block-title"><%= sportNews[0].title %></h3>
+      </a>
     <hr/>
 
     <!--small news-->
-    <div ng-repeat="item in sportNews.items | limitTo:4">
+      <% for(var i = 1; i < sportNews.length; i++ ) { %>
       <div class="row">
-        <a href="/news/{{item.uid}}">
-          <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                     src="{{item.imageThumb}}"
-                                     alt="{{item.title}}"></div>
-          <h4 class="col-lg-7 news-block-title">{{item.title}}</h4>
-        </a>
+          <a href="/news/<%= sportNews[i].uid %>">
+              <div class="col-lg-5"><img class="img-responsive news-block-img"
+                                         src="<%= sportNews[i].imageThumb %>"
+                                         alt="<%= sportNews[i].title %>"></div>
+              <h4 class="col-lg-7 news-block-title"><%= sportNews[i].title %></h4>
+          </a>
       </div>
       <br/>
-    </div>
+      <% } %>
   </div>
 
   <!--Multimidia Col-->
   <div class="col-lg-4">
     <h2 class="page-header">Entretenimento</h2>
     <!--Header news -->
-    <a href="/news/{{mediaNews.header.uid}}">
-      <img class="img-responsive news-block-img" src="{{mediaNews.header.imageThumb}}" alt="{{mediaNews.header.title}}">
-      <h3 class="news-block-title">{{mediaNews.header.title}}</h3>
-    </a>
+      <a href="/news/<%= mediaNews[0].uid %>">
+          <img class="img-responsive news-block-img" src="<%= mediaNews[0].imageThumb %>" alt="<%= mediaNews[0].title %>">
+          <h3 class="news-block-title"><%= mediaNews[0].title %></h3>
+      </a>
     <hr/>
 
     <!--small news-->
-    <div ng-repeat="item in mediaNews.items | limitTo:4">
+      <% for(var i = 1; i < mediaNews.length; i++ ) { %>
       <div class="row">
-        <a href="/news/{{item.uid}}">
-          <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                     src="{{item.imageThumb}}"
-                                     alt="{{item.title}}"></div>
-          <h4 class="col-lg-7 news-block-title">{{item.title}}</h4>
-        </a>
+          <a href="/news/<%= mediaNews[i].uid %>">
+              <div class="col-lg-5"><img class="img-responsive news-block-img"
+                                         src="<%= mediaNews[i].imageThumb %>"
+                                         alt="<%= mediaNews[i].title %>"></div>
+              <h4 class="col-lg-7 news-block-title"><%= mediaNews[i].title %></h4>
+          </a>
       </div>
       <br/>
-    </div>
+      <% } %>
   </div>
 
 </div>
@@ -107,10 +129,12 @@
 <!--Tech News-->
 <div class="row tech-col">
   <div class="col-lg-12"><h2 class="page-header">Tecnologia</h2></div>
-  <div class="col-lg-3" ng-repeat="item in techNews | limitTo:4">
-    <a href="/news/{{item.uid}}">
-      <img class="img-responsive news-block-img" src="{{item.imageThumb}}" alt="{{item.title}}">
-      <h4 class="news-block-title">{{item.title}}</h4>
+    <% for(var i in techNews) { %>
+    <div class="col-lg-3" ng-repeat="item in techNews | limitTo:4">
+    <a href="/news/<%= techNews[i].uid %>">
+      <img class="img-responsive news-block-img" src="<%= techNews[i].imageThumb %>" alt="<%= techNews[i].title %>">
+      <h4 class="news-block-title"><%= techNews[i].title %></h4>
     </a>
-  </div>
+    </div>
+    <% } %>
 </div>
