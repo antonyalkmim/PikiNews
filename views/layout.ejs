@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PikiNews</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+        <link rel="stylesheet" href="/bower_components/html5-boilerplate/dist/css/normalize.css">
+        <link rel="stylesheet" href="/bower_components/html5-boilerplate/dist/css/main.css">
+        <script src="/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <!--bootstrap-->
+        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+
+        <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.min.css">
+
+        <!--app styles-->
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!--Menu-->
+            <%- include partials/menu.html %>
+
+            <!--Header-->
+            <%- include partials/header.html %>
+
+            <!--App Container-->
+            <div class="container app-container">
+                <%- body %>
+            </div>
+
+            <div class="push hidden-sm hidden-xs"></div>
+        </div>
+
+        <!--Footer-->
+        <%- include partials/footer.html %>
+
+        <!--Scripts-->
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

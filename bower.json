@@ -4,18 +4,8 @@
   "homepage": "https://github.com/antonyalkmim/SputinikNews",
   "license": "MIT",
   "dependencies": {
-    "angular": "~1.6.1",
-    "angular-route": "~1.6.1",
-    "angular-loader": "~1.6.1",
-    "angular-mocks": "~1.6.1",
     "html5-boilerplate": "^5.3.0",
     "bootstrap": "^3.3.7",
-    "components-font-awesome": "^4.7.0",
-    "showdown": "^1.6.3",
-    "ng-showdown": "^1.1.0",
-    "showdown-youtube": "^1.2.1",
-    "angular-bootstrap": "^2.5.0",
-    "angular-animate": "^1.6.1",
-    "angular-resource": "^1.6.1"
+    "components-font-awesome": "^4.7.0"
   }
 }

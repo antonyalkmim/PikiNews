@@ -1,14 +1,32 @@
 {
   "name": "sputiniknews",
-  "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/antonyalkmim/SputinikNews",
-  "license": "MIT",
-  "devDependencies": {
-    "bower": "^1.7.7",
-    "http-server": "^0.9.0"
-  },
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "start": "http-server -a localhost -p 8000 -c-1 ./app"
+    "start": "nodemon ./bin/www"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonyalkmim/SputinikNews.git"
+  },
+  "author": "antonyalkmim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antonyalkmim/SputinikNews/issues"
+  },
+  "homepage": "https://github.com/antonyalkmim/SputinikNews#readme",
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "~2.5.2",
+    "express": "~4.14.0",
+    "express-ejs-layouts": "^2.2.0",
+    "mongoose": "^4.8.1",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
   }
 }
