@@ -26,7 +26,13 @@ exports.get = (req, res) => {
 //Search News
 //========================================
 exports.search = (req, res) => {
-    let news = {
+
+    let num_items = req.params.num_items || 15; //default num_items
+    let offset = req.params.offset || 0; //default offset
+
+    //Search News
+    //===============================
+    let _news = {
         uid 		: "noticia-cadastrada-pela-api",
         title 		: "Notícia cadastrada pela API",
         subtitle 	: "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
@@ -35,16 +41,22 @@ exports.search = (req, res) => {
         updatedAt  	: new Date()
     };
 
-    var newsArr = [];
+    var news = [];
     for(var i = 0; i < 20; i++){
-        newsArr.push(news);
+        news.push(_news);
     }
 
-    let locals = {
-        news : newsArr.slice(req.params.offset, 20)
-    };
+    news = news.slice(offset, num_items);
 
-    res.render('search', locals);
+
+    //BreakingNews News
+    //===============================
+    var breakingNews = [_news, _news, _news];
+
+
+
+    //render
+    res.render('search', { moment, news, breakingNews });
 };
 
 
