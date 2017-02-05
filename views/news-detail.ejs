@@ -1,34 +1,38 @@
 <div class="row">
     <div class="col-lg-8 col-news">
         <div class="row">
-            <div class="col-lg-6"><p class="news-date">{{news.createdAt | date:'medium'}} - Atualizado em {{news.updatedAt | date:'medium'}}</p></div>
-            <div class="col-lg-6 news-author"><strong>Autor:</strong> {{news.author}}</div>
+            <div class="col-lg-6"><p class="news-date"><%= moment(news.createdAt).format('LL') %> - Atualizado em <%= moment(news.updatedAt).format('LL') %> </p></div>
+            <div class="col-lg-6 news-author"><strong>Autor:</strong> <%= news.author %></div>
         </div>
 
         <div class="page-header news-title">
-            <h1 class="">{{news.title}}</h1>
-            <h4 class="news-subtitle">{{news.subtitle}}</h4>
+            <h1 class=""><%= news.title %></h1>
+            <h4 class="news-subtitle"><%= news.subtitle %></h4>
         </div>
 
-        <img src="{{news.imageThumb}}" width="100%">
-        <div class="news-content" markdown-to-html="news.content"></div>
+        <img src="<%= news.imageThumb %>" width="100%">
+        <div class="news-content">
+        <%= news.content %>
+        </div>
 
         <div class="news-content-bottom-separator"></div>
     </div>
 
     <div class="col-lg-4 news-related">
+
         <h3 class="page-header news-related-title" ng-if="relatedNews.length > 0">Relacionados</h3>
-        <div ng-repeat="item in relatedNews">
+
+        <% for (var i in related) { %>
             <div class="row">
-                <a href="#!/news/{{item.uid}}">
+                <a href="/news/<%= related[i].uid %>">
                     <div class="col-lg-5"><img class="img-responsive news-block-img"
-                                               src="{{item.imageThumb}}"
-                                               alt="{{item.title}} - {{item.subtitle}}"></div>
-                    <h4 class="col-lg-7 news-block-title">{{item.title}}</h4>
+                                               src="<%= related[i].imageThumb %>"
+                                               alt="<%= related[i].title %>"></div>
+                    <h4 class="col-lg-7 news-block-title"><%= related[i].title %></h4>
                 </a>
             </div>
             <hr/>
-        </div>
+        <% } %>
 
         <div class="merchan">
             <img class="merchan-img" src="http://xpenology.org/wp-content/themes/qaengine/img/default-thumbnail.jpg">

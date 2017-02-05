@@ -1,5 +1,8 @@
 'use strict';
 
+const moment = require('moment');
+moment.locale('pt_BR');
+
 //Get News
 //========================================
 exports.get = (req, res) => {
@@ -8,14 +11,15 @@ exports.get = (req, res) => {
         title 		: "Notícia cadastrada pela API",
         subtitle 	: "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
         imageThumb 	: "http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg",
+        content 	: "Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
+        author      : "Antony Alkmim",
         createdAt  	: new Date(),
         updatedAt  	: new Date()
     };
 
+    let related = [news, news, news];
 
-    let locals = { news };
-
-    res.render('news-detail', locals);
+    res.render('news-detail', { moment, news, related });
 };
 
 
