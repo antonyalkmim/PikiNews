@@ -38,5 +38,15 @@
     "author"      : "Antony Alkmim",
     "createdAt"   : "2017-02-06T18:25:43.511Z",
     "updatedAt"   : "2017-02-06T18:25:43.511Z"
+  },
+  {
+    "uid"         : "noticia-cadastrada-pela-api",
+    "title"       : "05 Notícia cadastrada pela API",
+    "subtitle"    : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
+    "imageThumb"  : "http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg",
+    "content" 	  : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
+    "author"      : "Antony Alkmim",
+    "createdAt"   : "2017-02-06T18:25:43.511Z",
+    "updatedAt"   : "2017-02-06T18:25:43.511Z"
   }
 ]

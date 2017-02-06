@@ -5,7 +5,7 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
-const Bootstrap = require('./app/bootstrap.js');
+const Routes = require('./routes.js');
 
 let app = express();
 
@@ -25,6 +25,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //Initialize routes
 //==============================
-Bootstrap(app);
+Routes(app);
+
+
 
 module.exports = app;
