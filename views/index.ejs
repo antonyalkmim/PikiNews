@@ -40,7 +40,7 @@
         <% for(var i in breakingNews) { %>
             <div class="col-lg-6">
                 <a href="/news/<%= breakingNews[i].uid %>">
-                    <img class="img-responsive news-block-img" src="<%= breakingNews[i].imageThumb %>" alt="<%= breakingNews[i].title %>">
+                    <img class="img-responsive news-block-img news-block-img-sm" src="<%= breakingNews[i].imageThumb %>" alt="<%= breakingNews[i].title %>">
                     <h3 class="news-block-title"><%= breakingNews[i].title %></h3>
                 </a>
             </div>
@@ -57,7 +57,7 @@
     <h2 class="page-header">Mundo</h2>
     <!--Header news -->
     <a href="/news/<%= worldNews[0].uid %>">
-      <img class="img-responsive news-block-img" src="<%= worldNews[0].imageThumb %>" alt="<%= worldNews[0].title %>">
+      <img class="img-responsive news-block-img news-block-img-lg" src="<%= worldNews[0].imageThumb %>" alt="<%= worldNews[0].title %>">
       <h3 class="news-block-title"><%= worldNews[0].title %></h3>
     </a>
     <hr/>
@@ -66,7 +66,7 @@
     <% for(var i = 1; i < worldNews.length; i++ ) { %>
     <div class="row">
         <a href="/news/<%= worldNews[i].uid %>">
-            <div class="col-lg-5"><img class="img-responsive news-block-img"
+            <div class="col-lg-5"><img class="img-responsive news-block-img news-block-img-xs"
                                        src="<%= worldNews[i].imageThumb %>"
                                        alt="<%= worldNews[i].title %>"></div>
             <h4 class="col-lg-7 news-block-title"><%= worldNews[i].title %></h4>
@@ -81,7 +81,7 @@
     <h2 class="page-header">Esporte</h2>
     <!--Header news -->
       <a href="/news/<%= sportNews[0].uid %>">
-          <img class="img-responsive news-block-img" src="<%= sportNews[0].imageThumb %>" alt="<%= sportNews[0].title %>">
+          <img class="img-responsive news-block-img news-block-img-lg" src="<%= sportNews[0].imageThumb %>" alt="<%= sportNews[0].title %>">
           <h3 class="news-block-title"><%= sportNews[0].title %></h3>
       </a>
     <hr/>
@@ -90,7 +90,7 @@
       <% for(var i = 1; i < sportNews.length; i++ ) { %>
       <div class="row">
           <a href="/news/<%= sportNews[i].uid %>">
-              <div class="col-lg-5"><img class="img-responsive news-block-img"
+              <div class="col-lg-5"><img class="img-responsive news-block-img news-block-img-xs"
                                          src="<%= sportNews[i].imageThumb %>"
                                          alt="<%= sportNews[i].title %>"></div>
               <h4 class="col-lg-7 news-block-title"><%= sportNews[i].title %></h4>
@@ -105,7 +105,7 @@
     <h2 class="page-header">Entretenimento</h2>
     <!--Header news -->
       <a href="/news/<%= mediaNews[0].uid %>">
-          <img class="img-responsive news-block-img" src="<%= mediaNews[0].imageThumb %>" alt="<%= mediaNews[0].title %>">
+          <img class="img-responsive news-block-img news-block-img-lg" src="<%= mediaNews[0].imageThumb %>" alt="<%= mediaNews[0].title %>">
           <h3 class="news-block-title"><%= mediaNews[0].title %></h3>
       </a>
     <hr/>
@@ -114,7 +114,7 @@
       <% for(var i = 1; i < mediaNews.length; i++ ) { %>
       <div class="row">
           <a href="/news/<%= mediaNews[i].uid %>">
-              <div class="col-lg-5"><img class="img-responsive news-block-img"
+              <div class="col-lg-5"><img class="img-responsive news-block-img news-block-img-xs"
                                          src="<%= mediaNews[i].imageThumb %>"
                                          alt="<%= mediaNews[i].title %>"></div>
               <h4 class="col-lg-7 news-block-title"><%= mediaNews[i].title %></h4>
@@ -132,7 +132,7 @@
     <% for(var i in techNews) { %>
     <div class="col-lg-3" ng-repeat="item in techNews | limitTo:4">
     <a href="/news/<%= techNews[i].uid %>">
-      <img class="img-responsive news-block-img" src="<%= techNews[i].imageThumb %>" alt="<%= techNews[i].title %>">
+      <img class="img-responsive news-block-img news-block-img-md" src="<%= techNews[i].imageThumb %>" alt="<%= techNews[i].title %>">
       <h4 class="news-block-title"><%= techNews[i].title %></h4>
     </a>
     </div>

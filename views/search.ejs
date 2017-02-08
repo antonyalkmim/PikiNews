@@ -5,7 +5,7 @@
             <div class="search-news-block row">
                 <a href="/news/<%= news[i].uid %>">
                     <div class="col-lg-6">
-                        <img class="img-responsive news-block-img" src="<%= news[i].imageThumb %>" alt="<%= news[i].title %>">
+                        <img class="img-responsive news-block-img news-block-img-lg" src="<%= news[i].imageThumb %>" alt="<%= news[i].title %>">
                     </div>
                     <div class="col-lg-6">
                         <h3 class="search-news-block-title"><%= news[i].title %></h3>
@@ -31,7 +31,7 @@
         <% for (var i in breakingNews) { %>
             <div class="row">
                 <a href="/news/<%= breakingNews[i].uid %>">
-                    <div class="col-lg-5"><img class="img-responsive news-block-img"
+                    <div class="col-lg-5"><img class="img-responsive news-block-img news-block-img-xs"
                                                src="<%= breakingNews[i].imageThumb %>"
                                                alt="<%= breakingNews[i].title %>"></div>
                     <h4 class="col-lg-7 news-block-title"><%= breakingNews[i].title %></h4>

@@ -81,7 +81,22 @@ footer ul li {
 
 .news-block-img {
     border-radius: 3px;
+    width:100%;
 }
+.news-block-img-lg {
+    height:205px;
+}
+.news-block-img-md {
+    height:150px;
+}
+.news-block-img-sm {
+    height:122px;
+}
+.news-block-img-xs {
+    height:75px;
+}
+
+
 .news-block-title {
     margin:8px 0 20px 0;
 }
