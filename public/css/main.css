@@ -32,7 +32,11 @@ a:hover {
     font-family: ambient, serif;
     font-size: 55px;
 }
-.menu {  margin-bottom: 0px !important;  }
+.menu {
+    margin-bottom: 0px !important;
+    background: #000 !important;
+    border-bottom: #F9A825 5px solid;
+}
 .header {
     background: #FFF;
     padding: 50px 0;
