@@ -1,52 +1,52 @@
 [
   {
     "uid"         : "noticia-cadastrada-pela-api",
-    "title"       : "01 Notícia cadastrada pela API",
-    "subtitle"    : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "imageThumb"  : "http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg",
-    "content" 	  : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "author"      : "Antony Alkmim",
+    "title"       : "Choosing teams in physical ed. classes can cause traumas",
+    "subtitle"    : "A experiência que as crianças têm em aulas de educação física pode ter consequências a longo prazo, diz especialista",
+    "imageThumb"  : "/images/aula-ed-fisica.jpg",
+    "content" 	  : "",
+    "author"      : "BBC Brasil",
+    "createdAt"   : "2017-02-09T18:25:43.511Z",
+    "updatedAt"   : "2017-02-09T18:25:43.511Z"
+  },
+  {
+    "uid"         : "noticia-cadastrada-pela-api",
+    "title"       : "Child soldier to boxing champ",
+    "subtitle"    : "Former child soldiers start a boxing school for Congo’s youth",
+    "imageThumb"  : "/images/boxing-school.jpg",
+    "content" 	  : "",
+    "author"      : "Kyle Almond, CNN",
     "createdAt"   : "2017-02-06T18:25:43.511Z",
     "updatedAt"   : "2017-02-06T18:25:43.511Z"
   },
   {
     "uid"         : "noticia-cadastrada-pela-api",
-    "title"       : "02 Notícia cadastrada pela API",
-    "subtitle"    : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "imageThumb"  : "http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg",
-    "content" 	  : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "author"      : "Antony Alkmim",
-    "createdAt"   : "2017-02-06T18:25:43.511Z",
-    "updatedAt"   : "2017-02-06T18:25:43.511Z"
+    "title"       : "F1 stars auction photos for charity",
+    "subtitle"    : "Formula One stars auction photos for children's charity",
+    "imageThumb"  : "/images/f1.jpg",
+    "content" 	  : "",
+    "author"      : "CNN Sports",
+    "createdAt"   : "2017-02-07T18:25:43.511Z",
+    "updatedAt"   : "2017-02-07T18:25:43.511Z"
   },
   {
-    "uid"         : "noticia-cadastrada-pela-api",
-    "title"       : "03 Notícia cadastrada pela API",
-    "subtitle"    : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "imageThumb"  : "http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg",
-    "content" 	  : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "author"      : "Antony Alkmim",
-    "createdAt"   : "2017-02-06T18:25:43.511Z",
-    "updatedAt"   : "2017-02-06T18:25:43.511Z"
+    "uid"         : "Power-capitals-join-19M-glamor-tour",
+    "title"       : "Power capitals join $19M glamor tour",
+    "subtitle"    : "Longines Global Champions Tour: London and Berlin added to 2017 schedule",
+    "imageThumb"  : "/images/horse.jpg",
+    "content" 	  : "",
+    "author"      : "George Ramsay, CNN",
+    "createdAt"   : "2017-01-11T18:25:43.511Z",
+    "updatedAt"   : "2017-01-11T18:25:43.511Z"
   },
   {
-    "uid"         : "noticia-cadastrada-pela-api",
-    "title"       : "05 Notícia cadastrada pela API",
-    "subtitle"    : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "imageThumb"  : "http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg",
-    "content" 	  : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "author"      : "Antony Alkmim",
-    "createdAt"   : "2017-02-06T18:25:43.511Z",
-    "updatedAt"   : "2017-02-06T18:25:43.511Z"
-  },
-  {
-    "uid"         : "noticia-cadastrada-pela-api",
-    "title"       : "05 Notícia cadastrada pela API",
-    "subtitle"    : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "imageThumb"  : "http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg",
-    "content" 	  : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "author"      : "Antony Alkmim",
-    "createdAt"   : "2017-02-06T18:25:43.511Z",
-    "updatedAt"   : "2017-02-06T18:25:43.511Z"
+    "uid"         : "Countdown-starts-to-PyeongChang-2018",
+    "title"       : "Countdown starts to PyeongChang 2018",
+    "subtitle"    : "PyeongChang 2018 Winter Olympics: Countdown begins with one year to go",
+    "imageThumb"  : "/images/pyeongchang.jpg",
+    "content" 	  : "",
+    "author"      : "CNN Sports",
+    "createdAt"   : "2017-02-09T18:25:43.511Z",
+    "updatedAt"   : "2017-02-09T18:25:43.511Z"
   }
 ]
