@@ -104,6 +104,9 @@ footer ul li {
 .worldnews-col a {  color: #cd150c !important;  }
 .worldnews-col a:hover { color: #122b40 !important; }
 
+.breakingnews a {  color: #cd150c !important;  }
+.breakingnews a:hover { color: #122b40 !important; }
+
 .sports-col a {  color: #359e00 !important;  }
 .sports-col a:hover { color: #122b40 !important; }
 
@@ -153,9 +156,11 @@ footer ul li {
 }
 
 /*Search Neews Page*/
-.search-news-block-title {
-    margin:0;
-}
+.search-news-block-title {  margin : 0;  }
+
+.search-news-block a {  color: #cd150c !important;  }
+.search-news-block a:hover { color: #122b40 !important; }
+
 .search-news-subtitle {
     color: #000;
     margin-top: 1em;
