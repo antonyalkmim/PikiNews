@@ -1,42 +1,155 @@
 [
   {
-    "uid"         : "noticia-cadastrada-pela-api",
-    "title"       : "01 Notícia cadastrada pela API",
-    "subtitle"    : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "imageThumb"  : "http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg",
-    "content" 	  : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "author"      : "Antony Alkmim",
+    "uid"         : "Worlds-biggest-refugee-camp-to-stay-open",
+    "title"       : "World's biggest refugee camp to stay open",
+    "subtitle"    : "Kenyan closure of Dadaab refugee camp blocked by high court",
+    "imageThumb"  : "/images/refuuges_kenya.jpg",
+    "content" 	  : "",
+    "author"      : "BBC News",
+    "createdAt"   : "2017-02-09T18:25:43.511Z",
+    "updatedAt"   : "2017-02-09T18:25:43.511Z"
+  },
+  {
+    "uid"         : "A-Language-Learning-Phenomenon",
+    "title"       : "A Language Learning Phenomenon",
+    "subtitle"    : "5 Reasons 1,000,000 People Use This App To Learn Languages",
+    "imageThumb"  : "/images/babel-languages.jpg",
+    "content" 	  : "",
+    "author"      : "ED M. WOOD",
     "createdAt"   : "2017-02-06T18:25:43.511Z",
     "updatedAt"   : "2017-02-06T18:25:43.511Z"
   },
   {
-    "uid"         : "noticia-cadastrada-pela-api",
-    "title"       : "02 Notícia cadastrada pela API",
-    "subtitle"    : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "imageThumb"  : "http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg",
-    "content" 	  : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "author"      : "Antony Alkmim",
-    "createdAt"   : "2017-02-06T18:25:43.511Z",
-    "updatedAt"   : "2017-02-06T18:25:43.511Z"
+    "uid"         : "Germany-to-boost-migrant-deportations",
+    "title"       : "Germany to boost migrant deportations",
+    "subtitle"    : "Merkel seeks to ramp up failed asylum seeker deportations",
+    "imageThumb"  : "/images/german_deportations.jpg",
+    "content" 	  : "",
+    "author"      : "BBC News",
+    "createdAt"   : "2017-02-09T18:25:43.511Z",
+    "updatedAt"   : "2017-02-09T18:25:43.511Z"
+  },
+  {
+    "uid"         : "France-attack",
+    "title"       : "Police thwart 'imminent' France attack",
+    "subtitle"    : "Three men and girl of 16 are found with bomb-making materials in a police raid in Montpellier",
+    "imageThumb"  : "/images/france-terrorism.jpg",
+    "content" 	  : "",
+    "author"      : "BBC News",
+    "createdAt"   : "2017-02-10T18:25:43.511Z",
+    "updatedAt"   : "2017-02-10T18:25:43.511Z"
+  },
+  {
+    "uid"         : "5g-has-a-logo-now",
+    "title"       : "5G is still years away, but at least it has a logo now",
+    "subtitle"    : "",
+    "imageThumb"  : "/images/5g.png",
+    "content" 	  : "",
+    "author"      : "Chaim Gartenberg",
+    "createdAt"   : "2017-02-08T18:25:43.511Z",
+    "updatedAt"   : "2017-02-08T18:25:43.511Z"
   },
   {
     "uid"         : "noticia-cadastrada-pela-api",
-    "title"       : "03 Notícia cadastrada pela API",
-    "subtitle"    : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "imageThumb"  : "http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg",
-    "content" 	  : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "author"      : "Antony Alkmim",
-    "createdAt"   : "2017-02-06T18:25:43.511Z",
-    "updatedAt"   : "2017-02-06T18:25:43.511Z"
+    "title"       : "Choosing teams in physical ed. classes can cause traumas",
+    "subtitle"    : "A experiência que as crianças têm em aulas de educação física pode ter consequências a longo prazo, diz especialista",
+    "imageThumb"  : "/images/aula-ed-fisica.jpg",
+    "content" 	  : "",
+    "author"      : "BBC Brasil",
+    "createdAt"   : "2017-02-09T18:25:43.511Z",
+    "updatedAt"   : "2017-02-09T18:25:43.511Z"
+  },
+  {
+    "uid"         : "Britain-finally-passes-Brexit-bill",
+    "title"       : "Britain finally passes Brexit bill",
+    "subtitle"    : "House of Commons OKs Brexit bill",
+    "imageThumb"  : "/images/brexit.jpg",
+    "content" 	  : "",
+    "author"      : "Angela Dewan and Simon Cullen, CNN",
+    "createdAt"   : "2017-02-08T18:25:43.511Z",
+    "updatedAt"   : "2017-02-08T18:25:43.511Z"
+  },
+  {
+    "uid"         : "cocaine-found-on-Norfolk-beaches",
+    "title"       : "£50m of cocaine found on Norfolk beaches",
+    "subtitle"    : "Cocaine with a street value of £50m has washed up on beaches in Norfolk.",
+    "imageThumb"  : "/images/cocaine-beach.jpg",
+    "content" 	  : "",
+    "author"      : "BBC News",
+    "createdAt"   : "2017-02-10T18:25:43.511Z",
+    "updatedAt"   : "2017-02-10T18:25:43.511Z"
+  },
+  {
+    "uid"         : "academy-awards-2017-oscars-so-white-april-reign-diversity-interview",
+    "title"       : "#OscarsSoWhite: ‘There’s still a lot of work to be done’",
+    "subtitle"    : "academy-awards-2017-oscars-so-white-april-reign-diversity-interview",
+    "imageThumb"  : "/images/oscarsowhite.jpg",
+    "content" 	  : "",
+    "author"      : "Kwame Opam",
+    "createdAt"   : "2017-02-03T18:25:43.511Z",
+    "updatedAt"   : "2017-02-03T18:25:43.511Z"
+  },
+  {
+    "uid"         : "Turkey-denies-Syria-air-strike",
+    "title"       : "Turkey denies Syria air strike 'mistake'",
+    "subtitle"    : "Russia says its jets bombed coordinates provided by Turkey - a claim the Turkish military rejects",
+    "imageThumb"  : "/images/turkey.jpg",
+    "content" 	  : "",
+    "author"      : "BBC News",
+    "createdAt"   : "2017-02-10T18:25:43.511Z",
+    "updatedAt"   : "2017-02-10T18:25:43.511Z"
+  },
+
+  {
+    "uid"         : "Stranger-Things-season-2-will-return-on-Halloween",
+    "title"       : "Stranger Things season 2 will return on Halloween",
+    "subtitle"    : "The demogorgon was destroyed but evil wasn’t",
+    "imageThumb"  : "/images/stranger-things-super-bowl.jpg",
+    "content" 	  : "",
+    "author"      : "Andrew Liptak",
+    "createdAt"   : "2017-02-05T18:25:43.511Z",
+    "updatedAt"   : "2017-02-05T18:25:43.511Z"
+  },
+  {
+    "uid"         : "Lady-Gaga-Super-Bowl-2017",
+    "title"       : "Lady Gaga performance with a protest anthem",
+    "subtitle"    : "Lady Gaga opened her Super Bowl performance with a protest anthem",
+    "imageThumb"  : "/images/gaga-superbowl.jpg",
+    "content" 	  : "",
+    "author"      : "Kwame Opam",
+    "createdAt"   : "2017-02-05T18:25:43.511Z",
+    "updatedAt"   : "2017-02-05T18:25:43.511Z"
+  },
+
+  {
+    "uid"         : "Trump-breaks-ice-with-Chinese-leader",
+    "title"       : "Trump breaks ice with Chinese leader",
+    "subtitle"    : "Trump breaks ice with China in letter to Xi",
+    "imageThumb"  : "/images/trump_china.jpg",
+    "content" 	  : "",
+    "author"      : "BBC News",
+    "createdAt"   : "2017-02-09T18:25:43.511Z",
+    "updatedAt"   : "2017-02-09T18:25:43.511Z"
   },
   {
     "uid"         : "noticia-cadastrada-pela-api",
-    "title"       : "05 Notícia cadastrada pela API",
-    "subtitle"    : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "imageThumb"  : "http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg",
-    "content" 	  : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "author"      : "Antony Alkmim",
-    "createdAt"   : "2017-02-06T18:25:43.511Z",
-    "updatedAt"   : "2017-02-06T18:25:43.511Z"
+    "title"       : "Trump vows to win travel ban court fight",
+    "subtitle"    : "President Donald Trump has said he has 'no doubt' his administration will win legal challenges to his travel ban.",
+    "imageThumb"  : "/images/trump-ban.jpg",
+    "content" 	  : "",
+    "author"      : "BBC News",
+    "createdAt"   : "2017-02-10T18:25:43.511Z",
+    "updatedAt"   : "2017-02-10T18:25:43.511Z"
+  },
+  {
+    "uid"         : "saving-the-rhino",
+    "title"       : "Saving the Rhino",
+    "subtitle"    : "The park that killed 50 people in three years",
+    "imageThumb"  : "/images/rhino.jpg",
+    "content" 	  : "",
+    "author"      : "Justin Rowlatt",
+    "createdAt"   : "2017-02-10T18:25:43.511Z",
+    "updatedAt"   : "2017-02-10T18:25:43.511Z"
   }
+
 ]
