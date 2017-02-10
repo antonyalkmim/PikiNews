@@ -1,52 +1,52 @@
 [
   {
-    "uid"         : "noticia-cadastrada-pela-api",
-    "title"       : "01 Notícia cadastrada pela API",
-    "subtitle"    : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "imageThumb"  : "http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg",
-    "content" 	  : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "author"      : "Antony Alkmim",
-    "createdAt"   : "2017-02-06T18:25:43.511Z",
-    "updatedAt"   : "2017-02-06T18:25:43.511Z"
+    "uid"         : "France-attack",
+    "title"       : "Police thwart 'imminent' France attack",
+    "subtitle"    : "Three men and girl of 16 are found with bomb-making materials in a police raid in Montpellier",
+    "imageThumb"  : "/images/france-terrorism.jpg",
+    "content" 	  : "",
+    "author"      : "BBC News",
+    "createdAt"   : "2017-02-10T18:25:43.511Z",
+    "updatedAt"   : "2017-02-10T18:25:43.511Z"
   },
   {
-    "uid"         : "noticia-cadastrada-pela-api",
-    "title"       : "02 Notícia cadastrada pela API",
-    "subtitle"    : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "imageThumb"  : "http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg",
-    "content" 	  : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "author"      : "Antony Alkmim",
-    "createdAt"   : "2017-02-06T18:25:43.511Z",
-    "updatedAt"   : "2017-02-06T18:25:43.511Z"
+    "uid"         : "US-Japan-ties",
+    "title"       : "US-Japan ties 'cornerstone of peace'",
+    "subtitle"    : "After talks with PM Shinzo Abe, Donald Trump says the US is committed to 'the security of Japan'",
+    "imageThumb"  : "/images/us-japan.jpg",
+    "content" 	  : "",
+    "author"      : "BBC News",
+    "createdAt"   : "2017-02-10T18:25:43.511Z",
+    "updatedAt"   : "2017-02-10T18:25:43.511Z"
   },
   {
-    "uid"         : "noticia-cadastrada-pela-api",
-    "title"       : "03 Notícia cadastrada pela API",
-    "subtitle"    : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "imageThumb"  : "http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg",
-    "content" 	  : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "author"      : "Antony Alkmim",
-    "createdAt"   : "2017-02-06T18:25:43.511Z",
-    "updatedAt"   : "2017-02-06T18:25:43.511Z"
+    "uid"         : "NHS-problems-unacceptable",
+    "title"       : "NHS problems unacceptable, says Hunt",
+    "subtitle"    : "Health Secretary Jeremy Hunt has conceded the NHS in England is facing 'completely unacceptable' problems.",
+    "imageThumb"  : "/images/nhs.jpg",
+    "content" 	  : "",
+    "author"      : "Nick Triggle",
+    "createdAt"   : "2017-02-10T18:25:43.511Z",
+    "updatedAt"   : "2017-02-10T18:25:43.511Z"
   },
   {
-    "uid"         : "noticia-cadastrada-pela-api",
-    "title"       : "05 Notícia cadastrada pela API",
-    "subtitle"    : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "imageThumb"  : "http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg",
-    "content" 	  : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "author"      : "Antony Alkmim",
-    "createdAt"   : "2017-02-06T18:25:43.511Z",
-    "updatedAt"   : "2017-02-06T18:25:43.511Z"
+    "uid"         : "Turkey-denies-Syria-air-strike",
+    "title"       : "Turkey denies Syria air strike 'mistake'",
+    "subtitle"    : "Russia says its jets bombed coordinates provided by Turkey - a claim the Turkish military rejects",
+    "imageThumb"  : "/images/turkey.jpg",
+    "content" 	  : "",
+    "author"      : "BBC News",
+    "createdAt"   : "2017-02-10T18:25:43.511Z",
+    "updatedAt"   : "2017-02-10T18:25:43.511Z"
   },
   {
-    "uid"         : "noticia-cadastrada-pela-api",
-    "title"       : "05 Notícia cadastrada pela API",
-    "subtitle"    : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "imageThumb"  : "http://s2.glbimg.com/UaEgn1Hynm-NUk6Sh44_JKgBJHM=/s.glbimg.com/og/rg/f/original/2016/09/02/brasil.jpg",
-    "content" 	  : "Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente. Primeira notícia cadastrada na Api como teste e será alterada posteriormente.",
-    "author"      : "Antony Alkmim",
-    "createdAt"   : "2017-02-06T18:25:43.511Z",
-    "updatedAt"   : "2017-02-06T18:25:43.511Z"
+    "uid"         : "cocaine-found-on-Norfolk-beaches",
+    "title"       : "£50m of cocaine found on Norfolk beaches",
+    "subtitle"    : "Cocaine with a street value of £50m has washed up on beaches in Norfolk.",
+    "imageThumb"  : "/images/cocaine-beach.jpg",
+    "content" 	  : "",
+    "author"      : "BBC News",
+    "createdAt"   : "2017-02-10T18:25:43.511Z",
+    "updatedAt"   : "2017-02-10T18:25:43.511Z"
   }
 ]
