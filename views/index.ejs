@@ -54,7 +54,7 @@
 
   <!--World News-->
   <div class="col-lg-4 worldnews-col">
-    <h2 class="page-header">Mundo</h2>
+    <h2 class="page-header">World</h2>
     <!--Header news -->
     <a href="/news/<%= worldNews[0].uid %>">
       <img class="img-responsive news-block-img news-block-img-lg" src="<%= worldNews[0].imageThumb %>" alt="<%= worldNews[0].title %>">
@@ -78,7 +78,7 @@
 
   <!--Sports Col-->
   <div class="col-lg-4 sports-col">
-    <h2 class="page-header">Esporte</h2>
+    <h2 class="page-header">Sports</h2>
     <!--Header news -->
       <a href="/news/<%= sportNews[0].uid %>">
           <img class="img-responsive news-block-img news-block-img-lg" src="<%= sportNews[0].imageThumb %>" alt="<%= sportNews[0].title %>">
@@ -102,7 +102,7 @@
 
   <!--Multimidia Col-->
   <div class="col-lg-4">
-    <h2 class="page-header">Entretenimento</h2>
+    <h2 class="page-header">Entertaiment</h2>
     <!--Header news -->
       <a href="/news/<%= mediaNews[0].uid %>">
           <img class="img-responsive news-block-img news-block-img-lg" src="<%= mediaNews[0].imageThumb %>" alt="<%= mediaNews[0].title %>">
@@ -128,7 +128,7 @@
 
 <!--Tech News-->
 <div class="row tech-col">
-  <div class="col-lg-12"><h2 class="page-header">Tecnologia</h2></div>
+  <div class="col-lg-12"><h2 class="page-header">Techs</h2></div>
     <% for(var i in techNews) { %>
     <div class="col-lg-3" ng-repeat="item in techNews | limitTo:4">
     <a href="/news/<%= techNews[i].uid %>">

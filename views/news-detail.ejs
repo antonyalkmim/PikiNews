@@ -1,8 +1,8 @@
 <div class="row">
     <div class="col-lg-8 col-news">
         <div class="row">
-            <div class="col-lg-6"><p class="news-date"><%= moment(news.createdAt).format('LL') %> - Atualizado em <%= moment(news.updatedAt).format('LL') %> </p></div>
-            <div class="col-lg-6 news-author"><strong>Autor:</strong> <%= news.author %></div>
+            <div class="col-lg-6"><p class="news-date"><%= moment(news.createdAt).format('LL') %> - Updated at <%= moment(news.updatedAt).format('LL') %> </p></div>
+            <div class="col-lg-6 news-author"><strong>Author:</strong> <%= news.author %></div>
         </div>
 
         <div class="page-header news-title">
@@ -20,7 +20,7 @@
 
     <div class="col-lg-4 news-related">
 
-        <h3 class="page-header news-related-title" ng-if="relatedNews.length > 0">Relacionados</h3>
+        <h3 class="page-header news-related-title" ng-if="relatedNews.length > 0">Related</h3>
 
         <% for (var i in related) { %>
             <div class="row">
