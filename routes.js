@@ -7,6 +7,13 @@ moment.locale('pt_BR');
 
 module.exports = function Routes(app){
 
+    // No CACHE
+    app.use(function (req, res, next) {
+        res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
+        res.header('Expires', '-1');
+        res.header('Pragma', 'no-cache');
+        next()
+    });
 
     //Routes
     //==========================================
