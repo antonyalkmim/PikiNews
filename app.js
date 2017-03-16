@@ -4,10 +4,14 @@ const path = require('path');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+const compression = require('compression');
 
 const Routes = require('./routes.js');
 
 let app = express();
+
+//enable gzip
+app.use(compression());
 
 // view engine setup
 //==============================
