@@ -10,7 +10,10 @@
                     <div class="col-lg-6">
                         <h3 class="search-news-block-title"><%= news[i].title %></h3>
                         <p class="search-news-subtitle"><%= news[i].subtitle %></p>
-                        <p class="search-news-date"><%= moment(news[i].createdAt).format('LL') %></p>
+                        <p class="search-news-date">
+                            <img src="/images/ic_clock.png" />
+                            <%= moment(news[i].createdAt).format('LL') %>
+                        </p>
                     </div>
                 </a>
             </div>
