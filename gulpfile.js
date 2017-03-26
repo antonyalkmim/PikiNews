@@ -23,19 +23,19 @@ const paths = {
 
 gulp.task('scripts', function() {
     return gulp.src(paths.scripts)
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
             //.pipe(uglify())
             .pipe(concat('all.js'))
-        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.write())
         .pipe(gulp.dest('public/build'));
 });
 
 gulp.task('css', () => {
     return gulp.src(paths.css)
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
             //.pipe(uglifycss())
             .pipe(concat('all.css'))
-        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.write())
         .pipe(gulp.dest('public/build'));
 
 });
